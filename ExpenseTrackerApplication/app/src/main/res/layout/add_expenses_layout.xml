@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutAddExpense"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/categories_list"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/rounded_lighter"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etExpenseItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Item Name"
+        android:inputType="text"
+        android:textColorHint="@color/darker"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etAddExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Amount"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/darker"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnExpenseItemMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lighter"
+            android:text="-"
+            android:textColor="@color/darker"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvExpenseItemQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/darker"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnExpenseItemPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lighter"
+            android:text="+"
+            android:textColor="@color/darker"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnAddExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/darkest"
+        android:text="ADD EXPENSE"
+        android:textAlignment="center"
+        android:textColor="@color/lighter" />
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/darkest"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_marginTop="2dp"
+        android:enabled="false"
+        android:id="@+id/tvActHistoryItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="Sample Item Name 1"
+        android:textColor="@color/lighter"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="0dp"
+        android:backgroundTint="@android:color/transparent"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvLblQuantityX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvActHistoryItemName"
+        android:text="x"
+        android:textColor="@color/lighter"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/tvLblQuantityX"
+        android:enabled="false"
+        android:id="@+id/tvActHistoryItemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/lighter"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="0dp"
+        android:inputType="number"
+        android:backgroundTint="@android:color/transparent"
+        />
+
+    <TextView
+        android:layout_marginLeft="1dp"
+        android:id="@+id/tvHistoryCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvActHistoryItemQuantity"
+        android:text="Category Name"
+        android:textColor="@color/lightest"
+        android:textSize="6sp"
+        android:padding="5dp"
+        android:background="@drawable/rounded_accent"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:id="@+id/tvActHistoryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvActHistoryItemName"
+        android:text="Tuesday, 14 March"
+        android:textColor="@color/lightest"
+        android:textSize="13sp"
+        android:padding="0dp"
+        android:backgroundTint="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/tvLblPriceP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/tvActHistoryAmount"
+        android:text="-P"
+        android:textColor="@color/accent1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:enabled="false"
+        android:id="@+id/tvActHistoryAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="99.99"
+        android:textColor="@color/accent1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="0dp"
+        android:inputType="numberDecimal"
+        android:backgroundTint="@android:color/transparent"
+        />
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tvActHistoryAmount"
+        android:id="@+id/btnEditExpenseItem"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/edit"
+        android:backgroundTint="@color/darkest"
+        android:visibility="visible"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/btnEditExpenseItem"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/darker" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".MainOverview4"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/overallChart3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+        <EditText
+            android:id="@+id/etCategory1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Category"
+            />
+
+        <EditText
+            android:id="@+id/etExpenses1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Expenses"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etColor1"
+            android:layout_width="match_parent"
+            android:hint="Enter hex code for color"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btnAdd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/btnGetColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET COLORS" />
+
+        <LinearLayout
+            android:id="@+id/dynamics_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

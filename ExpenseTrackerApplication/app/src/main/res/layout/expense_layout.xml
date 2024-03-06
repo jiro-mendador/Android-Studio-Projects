@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkest"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lblTvExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXPENSE"
+            android:textAlignment="center"
+            android:textColor="@color/lightest"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/lblTvExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:id="@+id/categories_list"
+            >
+            <LinearLayout
+                android:id="@+id/categoryExpenseListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_lighter"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/lvlTvNoCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No existing category"
+                    android:textColor="@color/darker"
+                    android:textSize="10sp"
+                    android:visibility="visible"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+       <include
+           android:id="@+id/AddExpense"
+           layout="@layout/add_expenses_layout"/>
+
+        <TextView
+            android:id="@+id/note1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AddExpense"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/note2"
+            android:textSize="12sp"
+            android:textColor="@color/lightest" />
+    </RelativeLayout>
+
+</ScrollView>

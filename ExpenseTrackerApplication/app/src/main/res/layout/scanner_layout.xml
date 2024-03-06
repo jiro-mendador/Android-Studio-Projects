@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkest"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/lblTvLbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan your expenses here"
+            android:textAlignment="center"
+            android:textColor="@color/lightest"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scannerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/lblTvLbl"
+            android:layout_marginTop="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scannerView"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_lighter">
+
+            <include layout="@layout/add_expenses_layout" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

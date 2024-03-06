@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainOverview"
+    android:padding="20dp"
+    android:gravity="center_vertical"
+    >
+
+    <org.eazegraph.lib.charts.PieChart
+        android:id="@+id/overallChart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        app:egLegendTextSize="36sp"
+        />
+
+    <EditText
+        android:id="@+id/etCategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/etExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/etColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        />
+
+</LinearLayout>

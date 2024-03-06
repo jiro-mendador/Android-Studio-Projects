@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkest"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/expenses_tracker_icon" />
+
+        <TextView
+            android:id="@+id/wcBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:layout_marginTop="15dp"
+            android:text="Welcome"
+            android:textAlignment="center"
+            android:textColor="@color/lightest"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wcBack"
+            android:layout_marginTop="10dp"
+            android:text="Please enter your details to sign up"
+            android:textAlignment="center"
+            android:textColor="@color/lighter"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instruction"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_darker"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/etSignInFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_darkest"
+                android:hint="First Name"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/lightest"
+                android:textColorHint="@color/lightest"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/etSignInLastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_darkest"
+                android:hint="Last name"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/lightest"
+                android:textColorHint="@color/lightest"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/credentials_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_layout"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_darker"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <EditText
+                android:id="@+id/etSignInUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/lightest"
+                android:textSize="12sp"
+                android:inputType="text"
+                android:textColor="@color/lightest"
+                android:background="@drawable/rounded_darkest"
+                android:padding="20dp"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="15dp"
+                android:hint="Username"
+                />
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/etSignInPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/lightest"
+                android:textSize="12sp"
+                android:inputType="textPassword"
+                android:textColor="@color/lightest"
+                android:background="@drawable/rounded_darkest"
+                android:padding="20dp"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="15dp"
+                android:hint="Password"
+                />
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/tvShowHidepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show password"
+                android:textColor="@color/lightest"
+                android:textSize="11sp"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnSignInUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accent1"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/lightest"
+            android:layout_below="@id/credentials_layout"
+            />
+    </RelativeLayout>
+</ScrollView>

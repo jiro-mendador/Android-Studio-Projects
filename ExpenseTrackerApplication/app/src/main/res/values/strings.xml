@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+
+    <string name="overview">OVERVIEW</string>
+
+    <string name="home">HOME</string>
+    <string name="add">ADD</string>
+    <string name="report">REPORTS</string>
+
+    <string name="categories">CATEGORIES</string>
+    <string name="expenses">EXPENSES</string>
+    <string name="savings">SAVINGS</string>
+    <string name="goals">GOALS</string>
+
+    <string name="totExp">TOTAL EXPENSES</string>
+    <string name="sampTotExp">P 22,536.99</string>
+
+    <string name="remBud">Remaining Budget</string>
+    <string name="sampRemBud">P 5,678.35</string>
+
+    <string name="totSav">Overall Savings</string>
+    <string name="sampTotSav">P 3,865.0</string>
+    <string name="welcome">Welcome</string>
+    <string name="user_FLname">First Last Name</string>
+    <string name="categoriesAndBudgets">CATEGORIES AND BUDGETS</string>
+    <string name="savingsAndGoals">SAVINGS AND GOALS</string>
+    <string name="reports">Overall Reports</string>
+
+    <string name="note1">You can only set one budget type on all categories per budget period</string>
+    <string name="note2">The remaining budget amount per budget period will become your savings</string>
+    <string name="note3">Savings can become an additional budget when expenses exceeds</string>
+    <string name="appDesc">Expense Tracker is a powerful tool for anyone looking to gain better control over their finances and make more informed spending decisions.</string>
+</resources>

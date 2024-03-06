@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Lblwelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="WELCOME"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSignedInUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USERNAME HERE"
+            app:layout_constraintEnd_toEndOf="@+id/Lblwelcome"
+            app:layout_constraintStart_toStartOf="@+id/Lblwelcome"
+            app:layout_constraintTop_toBottomOf="@+id/Lblwelcome" />
+
+        <LinearLayout
+            android:id="@+id/holderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/tvSignedInUsername"
+            app:layout_constraintStart_toStartOf="@+id/tvSignedInUsername"
+            app:layout_constraintTop_toBottomOf="@+id/tvSignedInUsername">
+
+            <Button
+                android:id="@+id/btnAddCateg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD CATEGORY" />
+
+            <LinearLayout
+                android:id="@+id/objectlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/etCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Category"
+                    android:inputType="text" />
+
+                <Button
+                    android:id="@+id/btnRemoveCateg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="REMOVE CATEGORY" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
