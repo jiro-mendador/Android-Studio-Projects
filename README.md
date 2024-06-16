@@ -1,2 +1,2 @@
 # Android-Studio-Projects
-Different simple java android applications made using android studio
+Simple java android applications made using Android Studio IDE
